@@ -13,10 +13,10 @@
         <h3>my portfolio</h3>
         <nav>
             <ul>
-                <!-- TODO: make all list elements links to page section -->
-                <li>home</li>
-                <li>about</li>
-                <li>contact</li>
+                <li><a link="#home"><img class="nav_link-img" src="./src/icons/home.png" alt=""></a></li>
+                <li><a link="#about"><img class="nav_link-img" src="./src/icons/profile.png" alt=""></a></li>
+                <li><a link="#projects"><img class="nav_link-img" src="src/icons/code.png" alt=""></a></li>
+                <li><a link="#contact"><img class="nav_link-img" src="src/icons/mail.png" alt=""></a></li>
             </ul>
         </nav>
         <!-- TODO: theme switch -->
@@ -29,17 +29,79 @@
                 <h1 class="info-name">Samykova Nina</h1>
                 <h4 class="info-role">Junior Software Engineer</h4>
                 <div class="info-links">
-                    <!-- TODO: link to linkedIn -->
-                    <!-- TODO: link to github -->
+                    <button class="info_link-btn"><img src="./src/icons/linkedin.png" alt="" /></button>
+                    <button class="info_link-btn"><img src="./src/icons/github.png" alt="" /></button>
                 </div>
                 <!-- TODO: download CV button -->
                 <button id="cv-button">download CV</button>
             </div>
         </div>
+        <div class="underline"></div>
         <div id="about">
-            <!-- add aboutme & education section -->
+            <div class="about-select">
+                <button class="about_select-btn" id="about-me-text"><img src="./src/icons/profile.png" alt=""></button>
+                <button class="about_select-btn" id="about-me-edu"><img src="./src/icons/graduation-cap.png" alt=""></button>
+            </div>
+            <p class="about-text">
+                Motivated junior frontend developer with a strong passion for web development. Self-taught with
+                hands-on experience in building responsive web applications through multiple projects on GitHub.
+                Seeking to leverage my skills in HTML, CSS, JavaScript, and React to contribute to a dynamic development team.
+            </p>
+            <!-- TODO: make and fill education section -->
         </div>
+        <div class="underline"></div>
         <!-- TODO: add projects section -->
+        <div id="projects">
+            <div class="project">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h4 class="project-info_title">Bla Bla Bla</h4>
+                    <p class="project-info_descr">bla bla bla</p>
+                    <ul class="project-info_stack">
+                        <li>bla</li>
+                        <li>bla</li>
+                        <li>bla</li>
+                    </ul>
+                    <ul class="project-info_links">
+                        <li><img src="./src/icons/github.png" alt=""></li>
+                        <li><img src="./src/icons/browser.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h4 class="project-info_title">Bla Bla Bla</h4>
+                    <p class="project-info_descr">bla bla bla</p>
+                    <ul class="project-info_stack">
+                        <li>bla</li>
+                        <li>bla</li>
+                        <li>bla</li>
+                    </ul>
+                    <ul class="project-info_links">
+                        <li><img src="./src/icons/github.png" alt=""></li>
+                        <li><img src="./src/icons/browser.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h4 class="project-info_title">Bla Bla Bla</h4>
+                    <p class="project-info_descr">bla bla bla</p>
+                    <ul class="project-info_stack">
+                        <li>bla</li>
+                        <li>bla</li>
+                        <li>bla</li>
+                    </ul>
+                    <ul class="project-info_links">
+                        <li><img src="./src/icons/github.png" alt=""></li>
+                        <li><img src="./src/icons/browser.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="underline"></div>
         <div id="contact"></div>
     </main>
     <footer></footer>

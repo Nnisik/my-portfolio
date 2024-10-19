@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1vh;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: auto 0;
+}
+
+#home {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+    background: blanchedalmond;
+}
+
+.photo {
+    height: 340px;
+    aspect-ratio: 3/4;
+    background: gold;
+    border-radius: 24px;
+}

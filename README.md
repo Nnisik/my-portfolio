@@ -1,5 +1,14 @@
 # My Portfolio Webpage
 
+## Table of Content
+
+## Features
+
+## Technologies used
+* HTML
+* CSS
+
+
 ### To Do
 * finish header with navigation section
     * theme switch
@@ -12,3 +21,6 @@
 
 ### Issues
 * links to page sections doesn't work
+
+### Testing 
+-- -- --

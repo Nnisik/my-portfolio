@@ -3,107 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hi</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <!-- connect JS -->
 </head>
 <body>
     <header>
-        <!-- add cute animation -->
-        <h3>my portfolio</h3>
-        <nav>
-            <ul>
-                <li><a link="#home"><img class="nav_link-img" src="./src/icons/home.png" alt=""></a></li>
-                <li><a link="#about"><img class="nav_link-img" src="./src/icons/profile.png" alt=""></a></li>
-                <li><a link="#projects"><img class="nav_link-img" src="src/icons/code.png" alt=""></a></li>
-                <li><a link="#contact"><img class="nav_link-img" src="src/icons/mail.png" alt=""></a></li>
-            </ul>
+        <nav class="nav">
+            <article class="container">
+                <ul class="nav-list">
+                    <li><a class="link" href="#home"><img class="img" src="./src/icons/home.png" alt=""></a></li>
+                    <li><a class="link" href="#about"><img class="img" src="./src/icons/profile.png" alt=""></a></li>
+                    <li><a class="link" href="#projects"><img class="img" src="src/icons/code.png" alt=""></a></li>
+                    <li><a class="link" href="#contact"><img class="img" src="src/icons/mail.png" alt=""></a></li>
+                </ul>
+                <button id="theme-switch-btn"><img src="src/icons/icons8-moon-24.png" alt="theme switch" /></button>
+            </article>
         </nav>
-        <!-- TODO: theme switch -->
     </header>
     <main>
-        <div id="home">
-            <div class="photo">
-            </div>
-            <div class="info">
-                <h1 class="info-name">Samykova Nina</h1>
-                <h4 class="info-role">Junior Software Engineer</h4>
-                <div class="info-links">
-                    <button class="info_link-btn"><img src="./src/icons/linkedin.png" alt="" /></button>
-                    <button class="info_link-btn"><img src="./src/icons/github.png" alt="" /></button>
+        <section id="home">
+            <article class="info">
+                <div class="container">
+                    <h1 class="header">Hi!<br>I'm Nina!</h1>
+                    <p class="text">
+                        I am a motivated junior frontend developer with a strong passion for web development.
+                        Self-taught with hands-on experience in building responsive web applications through multiple
+                        projects on GitHub. Seeking to leverage my skills in HTML, CSS, JavaScript, and React to
+                        contribute to a dynamic development team.
+                    </p>
                 </div>
-                <!-- TODO: download CV button -->
-                <button id="cv-button">download CV</button>
-            </div>
-        </div>
-        <div class="underline"></div>
-        <div id="about">
-            <div class="about-select">
-                <button class="about_select-btn" id="about-me-text"><img src="./src/icons/profile.png" alt=""></button>
-                <button class="about_select-btn" id="about-me-edu"><img src="./src/icons/graduation-cap.png" alt=""></button>
-            </div>
-            <p class="about-text">
-                Motivated junior frontend developer with a strong passion for web development. Self-taught with
-                hands-on experience in building responsive web applications through multiple projects on GitHub.
-                Seeking to leverage my skills in HTML, CSS, JavaScript, and React to contribute to a dynamic development team.
-            </p>
-            <!-- TODO: make and fill education section -->
-        </div>
-        <div class="underline"></div>
-        <!-- TODO: add projects section -->
-        <div id="projects">
-            <div class="project">
-                <div class="project-img"></div>
-                <div class="project-info">
-                    <h4 class="project-info_title">Bla Bla Bla</h4>
-                    <p class="project-info_descr">bla bla bla</p>
-                    <ul class="project-info_stack">
-                        <li>bla</li>
-                        <li>bla</li>
-                        <li>bla</li>
-                    </ul>
-                    <ul class="project-info_links">
-                        <li><img src="./src/icons/github.png" alt=""></li>
-                        <li><img src="./src/icons/browser.png" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-img"></div>
-                <div class="project-info">
-                    <h4 class="project-info_title">Bla Bla Bla</h4>
-                    <p class="project-info_descr">bla bla bla</p>
-                    <ul class="project-info_stack">
-                        <li>bla</li>
-                        <li>bla</li>
-                        <li>bla</li>
-                    </ul>
-                    <ul class="project-info_links">
-                        <li><img src="./src/icons/github.png" alt=""></li>
-                        <li><img src="./src/icons/browser.png" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-img"></div>
-                <div class="project-info">
-                    <h4 class="project-info_title">Bla Bla Bla</h4>
-                    <p class="project-info_descr">bla bla bla</p>
-                    <ul class="project-info_stack">
-                        <li>bla</li>
-                        <li>bla</li>
-                        <li>bla</li>
-                    </ul>
-                    <ul class="project-info_links">
-                        <li><img src="./src/icons/github.png" alt=""></li>
-                        <li><img src="./src/icons/browser.png" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="underline"></div>
-        <div id="contact"></div>
+                <a href="" class="link">*** add linkedIn link here***</a>
+            </article>
+            <aside class="side-container">
+                <div class="photo"></div>
+                <ul class="info">
+                    <li>***adress***</li>
+                    <li>***email***</li>
+                    <li>***phone number***</li>
+                </ul>
+            </aside>
+            <button id="cv-button">download CV</button>
+        </section>
+        <section id="about"></section>
+        <section id="projects"></section>
     </main>
-    <footer></footer>
+    <footer>
+        <section id="contact">
+            <h1 class="header"></h1>
+            <article>
+                <p>Contact me at <i>samnina805@gmail.com</i></p>
+                <a href="https://linkedin.com">LinkedIn</a>
+            </article>
+        </section>
+    </footer>
 </body>
 </html>

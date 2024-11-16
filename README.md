@@ -99,13 +99,11 @@ Here's a simple breakdown of the folder structure of this project:
         }
     }
 
-### Currently Work On
-* **Contact Form**: Implement a simple contact form to allow visitors to easily send me a message.
-* **Font Awesome**: If I choose to implement icons, I plan to use the Font Awesome library for additional icons.
-* **About Section**: Add more detailed information about myself, including my background, experience, and motivation.
-
 ### Future Improvements
-* **Projects Section**: Showcase a selection of personal or professional projects. Each project will include a brief description, link to the repository, and possibly a live demo.
-* **JavaScript Interactivity**: Enhance interactivity with additional features such as smooth scrolling, animations, or dynamic content loading. 
-* **Acknowledgments** 
-* **CSS Tricks**: Inspiration for various animations and hover effects. 
+About Section: Add more detailed information about myself, including my background, experience, and motivation.
+Projects Section: Showcase a selection of personal or professional projects. Each project will include a brief description, link to the repository, and possibly a live demo.
+Contact Form: Implement a simple contact form to allow visitors to easily send me a message.
+JavaScript Interactivity: Enhance interactivity with additional features such as smooth scrolling, animations, or dynamic content loading.
+Acknowledgments
+CSS Tricks: Inspiration for various animations and hover effects.
+Font Awesome: If I choose to implement icons, I plan to use the Font Awesome library for additional icons.

@@ -62,7 +62,7 @@ header {
 }
 
 .nav h1::before {
-    --s: var(--header); /* adjust to control the size */
+    --s: var(--header);
 
     width: var(--s);
     aspect-ratio: 1;
@@ -138,7 +138,7 @@ header {
 }
 
 .section {
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
 }
 
@@ -147,7 +147,6 @@ header {
 }
 
 #home {
-    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,6 +244,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 #home > .side-container .info h2 {
@@ -283,12 +283,13 @@ header {
 }
 
 #about {
+    min-height: 100vh;
     height: fit-content;
     background: var(--primary-acsent);
     display: flex;
     flex: 1 1;
     justify-content: space-evenly;
-    padding: 1rem;
+    padding: 2rem 1rem;
 
     & div {
         background: white;
@@ -301,10 +302,11 @@ header {
     flex-direction: column;
     gap: 1rem;
 }
-
+/*
 .right {
     transform: translateY(2rem);
 }
+*/
 
 #about > article > div {
     & h2 {
@@ -367,15 +369,37 @@ header {
 }
 
 .about--skills__list {
-    display: flex;
-    justify-content: space-evenly;
+    position: relative;
+    left: 4%;
+    display: grid;
+    grid-template-columns: 45% 45%;
     list-style: none;
+    gap: 1rem;
 
     & li {
-        width: 40%;
         aspect-ratio: 1/1;
-        background: red;
+        border: 1px solid black;
     }
+}
+
+.skills__section {
+    padding: 1rem;
+
+    & h3 {
+        font-size: var(--header);
+    }
+}
+
+.skills__grid {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    gap: 1rem;
+}
+
+.skills__img {
+    height: 40px;
+    aspect-ratio: 1/1;
 }
 
 .about--languages__list {
@@ -383,6 +407,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    margin-bottom: 1rem ;
 
     & li {
         padding: 1rem 0;

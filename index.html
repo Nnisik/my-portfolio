@@ -55,7 +55,7 @@
             </aside>
             <button id="cv-button">download CV</button>
         </section>
-        <section id="about" class="section">
+        <section id="about">
             <article class="left">
                 <div class="about--education">
                     <h2>Education</h2>
@@ -81,8 +81,34 @@
                 <div class="about--skills">
                     <h2>Technical skills</h2>
                     <ul class="about--skills__list">
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <div class="skills__section">
+                                <h3>Languages</h3>
+                                <div class="skills__grid">
+                                    <img class="skills__img" src="./src/icons/js.png" alt="HTML">
+                                    <img class="skills__img" src="./src/icons/python.png" alt="Python">
+                                    <img class="skills__img" src="./src/icons/java.png" alt="Java">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills__section">
+                                <h3 class="skills__header">Front-End</h3>
+                                <div class="skills__grid">
+                                    <img class="skills__img" src="./src/icons/html.png" alt="HTML">
+                                    <img class="skills__img" src="./src/icons/text.png" alt="CSS">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills__section">
+                                <h3 class="skills__header">Back-End</h3>
+                                <div class="skills__grid">
+                                    <img class="skills__img" src="./src/icons/python.png" alt="Python">
+                                    <img class="skills__img" src="./src/icons/java.png" alt="Java">
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="about--languages">
@@ -111,10 +137,21 @@
     </main>
     <footer>
         <section id="contact" class="section half-section">
-            <h1 class="header">Feel free to reach out.</h1>
             <article>
-                <p>Contact me at <i>samnina805@gmail.com</i></p>
-                <a href="https://linkedin.com">LinkedIn</a>
+                <div class="contact">
+                    <h1>Contact Me</h1>
+                    <div class="contact__form">
+                        <form action="" method="POST">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <label for="text">Text</label>
+                            <input type="text" name="text" id="text"></input>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact--links">
+                    <a href="https://linkedin.com">LinkedIn</a>
+                </div>
             </article>
         </section>
     </footer>

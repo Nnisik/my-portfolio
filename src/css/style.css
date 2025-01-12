@@ -1,21 +1,10 @@
 :root {
-    /* LIGHT THEME COLORS*/
-    --primary-light-background: #F4F4F4;
-    --primary-light-text: #000;
-    --primary-light-acsent: #73294C;
-    --secondary-light-acsent: #77C7D9;
-
-    /* DARK THEME COLORS*/
-    --primary-dark-background: #1D1919;
-    --primary-dark-text: #fff;
-    --primary-dark-acsent: #1BF2A3;
-    --secondary-dark-acsent: #6865BF;
-
     /* CURRENT THEME */
-    --primary-background: var(--primary-light-background);
-    --primary-text: var(--primary-light-text);
-    --primary-acsent: var(--primary-light-acsent);
-    --secondary-acsent: var(--secondary-light-acsent);
+    --background: #F4F4F4;
+    --text: #000;
+    --primary-acsent: #77C7D9;
+    --secondary-acsent: #9AA9F9;
+    color-scheme: light dark;
 
     --text-size: 15px;
     --header: 35px;
@@ -31,6 +20,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: light-dark(var(--background) var(--text));
+}
+
+.flex {
+    display: flex;
 }
 
 header {
@@ -40,7 +34,6 @@ header {
 
 .nav {
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: calc(var(--small-gap)/2) var(--small-gap);
@@ -76,19 +69,16 @@ header {
 }
 
 .nav .container {
-    display: flex;
     gap: var(--big-gap);
     width: fit-content;
 }
 
 .nav-list {
-    display: flex;
     gap: var(--small-gap);
     list-style: none;
 }
 
 .nav-list li {
-    display: flex;
     justify-content: center;
     align-content: center;
     height: var(--min-elem-height);
@@ -103,7 +93,6 @@ header {
 }
 
 .nav-list li .link {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -136,7 +125,6 @@ header {
 }
 
 #home {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -155,7 +143,6 @@ header {
 }
 
 #home > .info {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 60%;
@@ -181,7 +168,7 @@ header {
     margin: var(--small-gap) 10%;
     padding: var(--small-gap) var(--big-gap);
     background: var(--primary-acsent);
-    color: var(--primary-background);
+    color: var(--background);
     border-radius: 24px;
     text-align: center;
     font-size: var(--text-size);
@@ -200,7 +187,8 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background: var(--primary-acsent);
+    background: url("../assets/PHOTO-2024-12-14-13-42-39.jpg");
+    background-size: contain;
 }
 
 #home .photo::before {
@@ -229,9 +217,8 @@ header {
     left: 0;
     padding: var(--small-gap);
     z-index: 2;
-    background: var(--primary-text);
-    color: var(--primary-background);
-    display: flex;
+    background: var(--text);
+    color: var(--background);
     flex-direction: column;
     align-items: center;
 }
@@ -242,7 +229,6 @@ header {
 }
 
 #home .side-container .info li {
-    display: flex;
     align-items: start;
     width: 12rem;
     font-size: var(--text-size);
@@ -251,7 +237,7 @@ header {
     text-align: left;
 
     & a {
-        color: var(--primary-background);
+        color: var(--background);
     }
 }
 
@@ -282,22 +268,20 @@ header {
 }
 
 #about {
-    min-height: calc(100vh + 70px);
     height: fit-content;
     background: var(--primary-acsent);
-    display: flex;
     flex: 1 1;
     justify-content: space-evenly;
-    padding: var(--big-gap) var(--small-gap);
+    padding: var(--big-gap) var(--small-gap) calc(var(--big-gap) * 3);
+    color: var(--text);
 
     & div {
-        background: white;
+        background: var(--background);
     }
 }
 
 #about article {
     width: 45%;
-    display: flex;
     flex-direction: column;
     gap: var(--big-gap);
 }
@@ -310,15 +294,20 @@ header {
     padding-bottom: var(--small-gap);
 
     & h2 {
-        transform: translateX(2rem);
         font-size: var(--header);
         padding: var(--small-gap) 0;
+        margin: 0 var(--small-gap);
     }
+}
+
+.about--education h2 img {
+    height: var(--min-elem-height);
+    aspect-ratio: 1;
+    margin-right: var(--small-gap);
 }
 
 .about--education__list {
     list-style: none;
-    display: flex;
     flex-direction: column;
     gap: var(--big-gap);
     transform: translateX(2rem);
@@ -326,7 +315,6 @@ header {
 
     & li {
         position: relative;
-        display: flex;
         width: fit-content;
     }
 
@@ -402,7 +390,6 @@ header {
 
 .about--languages__list {
     width: 100%;
-    display: flex;
     justify-content: space-evenly;
     list-style: none;
 
@@ -420,13 +407,11 @@ header {
 }
 
 #projects {
-    background: var(--primary-background);
 }
 
 #contact {
-    background: var(--primary-text);
-    color: var(--primary-background);
-    display: flex;
+    background: var(--text);
+    color: var(--background);
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -437,7 +422,6 @@ header {
 }
 
 #contact .contact {
-    display: flex;
     flex-direction: row;
     gap: 4rem;
 }
@@ -448,14 +432,12 @@ header {
 }
 
 #contact .contact .contact__form form {
-    display: flex;
     flex-direction: column;
     gap: var(--big-gap);
     padding-top: 1rem;
 
     & label {
         font-size: var(--header);
-        display: flex;
         flex-direction: column;
         gap: var(--small-gap);
     }
@@ -471,27 +453,27 @@ header {
     }
 
     & button {
-        border: 1px solid var(--primary-background);
+        border: 1px solid var(--background);
         width: fit-content;
         padding: var(--small-gap) var(--big-gap);
         font-size: var(--text-size);
         background: transparent;
-        color: var(--primary-background);
+        color: var(--background);
         transition-duration: 0.3s;
         cursor: pointer;
 
         &:hover {
-            background: var(--primary-background);
-            color: var(--primary-text);
+            background: var(--background);
+            color: var(--text);
         }
     }
 
     & input,
     & textarea {
         background: transparent;
-        color: var(--primary-background);
+        color: var(--background);
         font-size: var(--text-size);
-        border: 1px solid var(--primary-background);
+        border: 1px solid var(--background);
     }
 
     & textarea {
@@ -501,14 +483,13 @@ header {
 
 .contact__links {
     width: 100%;
-    border-top: 1px solid var(--primary-background);
-    display: flex;
+    border-top: 1px solid var(--background);
     flex-direction: row;
     justify-content: center;
     gap: var(--big-gap);
 
     & a {
-        color: var(--primary-background);
+        color: var(--background);
         font-size: var(--text-size);
     }
 }

@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <nav class="flex nav">
             <div>
                 <div class="wavy-circle"></div>
                 <h1 class="name">Nina Samykova</h1>
             </div>
-            <article class="container">
-                <ul class="nav-list">
-                    <li><a class="link" href="#home"><img class="img" src="src/icons/home.png" alt="Home"></a></li>
-                    <li><a class="link" href="#about"><img class="img" src="src/icons/profile.png" alt="Profile"></a></li>
-                    <li><a class="link" href="#projects"><img class="img" src="src/icons/code.png" alt="Projects"></a></li>
-                    <li><a class="link" href="#contact"><img class="img" src="src/icons/mail.png" alt="Contacts"></a></li>
+            <article class="flex container">
+                <ul class="flex nav-list">
+                    <li class="flex"><a class="flex link" href="#home"><img class="img" src="../src/icons/home.png" alt="Home"></a></li>
+                    <li class="flex"><a class="flex link" href="#about"><img class="img" src="../src/icons/profile.png" alt="Profile"></a></li>
+                    <li class="flex"><a class="flex link" href="#projects"><img class="img" src="../src/icons/code.png" alt="Projects"></a></li>
+                    <li class="flex"><a class="flex link" href="#contact"><img class="img" src="../src/icons/mail.png" alt="Contacts"></a></li>
                 </ul>
-                <button id="theme-switch-btn"><img src="src/icons/icons8-moon-24.png" alt="theme switch" /></button>
+                <button id="theme-switch-btn"><img src="../src/icons/icons8-moon-24.png" alt="theme switch" /></button>
             </article>
         </nav>
     </header>
     <main>
-        <section id="home" class="section">
-            <article class="info">
+        <section id="home" class="section flex">
+            <article class="flex info">
                 <div class="container">
                     <h1 class="header">Hi!<br>I'm Nina!</h1>
                     <p class="text">
@@ -40,34 +40,34 @@
             </article>
             <aside class="side-container">
                 <div class="photo"></div>
-                <ul class="info">
+                <ul class="flex info">
                     <h2>Contacts</h2>
-                    <li>Vienna, Austria</li>
-                    <li>samnina850@gmail.com</li>
-                    <li>+436765606044</li>
+                    <li class="flex">Vienna, Austria</li>
+                    <li class="flex">samnina850@gmail.com</li>
+                    <li class="flex">+436765606044</li>
 
-                    <li>
+                    <li class="flex">
                         <ul class="links">
-                            <li><a href="https://github.com/Nnisik/">GitHub</a></li>
+                            <li class="flex"><a class="flex" href="https://github.com/Nnisik/">GitHub</a></li>
                         </ul>
                     </li>
                 </ul>
             </aside>
             <button id="cv-button">download CV</button>
         </section>
-        <section id="about">
-            <article class="left">
+        <section id="about" class="flex">
+            <article class="left flex">
                 <div class="about--education">
-                    <h2>Education</h2>
-                    <ul class="about--education__list">
-                        <li>
+                    <h2 class="flex"><img src="../src/icons/graduation-cap.png" alt="icon">Education</h2>
+                    <ul  class="flex about--education__list">
+                        <li class="flex">
                             <h3>2024 - Present</h3>
                             <div>
                                 <p>B.Sc. Computer Science</p>
                                 <p>University of Vienna, Vienna</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="flex">
                             <h3>2020 - 2024</h3>
                             <div>
                                 <p>B.Sc. Mathematics</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="about--languages">
                     <h2>Languages</h2>
-                    <ul class="about--languages__list">
+                    <ul  class="flex about--languages__list">
                         <li>
                             <h3>English</h3>
                             <p>Advanced</p>
@@ -94,7 +94,7 @@
                     </ul>
                 </div>
             </article>
-            <article class="right">
+            <article class="right flex">
                 <div class="about--skills">
                     <h2>Technical skills</h2>
                     <ul class="about--skills__list">
@@ -102,9 +102,9 @@
                             <div class="skills__section">
                                 <h3>Languages</h3>
                                 <div class="skills__grid">
-                                    <img class="skills__img" src="./src/icons/js.png" alt="HTML">
-                                    <img class="skills__img" src="./src/icons/python.png" alt="Python">
-                                    <img class="skills__img" src="./src/icons/java.png" alt="Java">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="HTML">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="Java">
                                 </div>
                             </div>
                         </li>
@@ -112,8 +112,10 @@
                             <div class="skills__section">
                                 <h3 class="skills__header">Front-End</h3>
                                 <div class="skills__grid">
-                                    <img class="skills__img" src="./src/icons/html.png" alt="HTML">
-                                    <img class="skills__img" src="./src/icons/text.png" alt="CSS">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=QBqFNfPPB2Kx&format=png&color=000000" alt="SaSS">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=sOWbK4N3cxGh&format=png&color=000000" alt="Webpack">
                                 </div>
                             </div>
                         </li>
@@ -121,8 +123,23 @@
                             <div class="skills__section">
                                 <h3 class="skills__header">Back-End</h3>
                                 <div class="skills__grid">
-                                    <img class="skills__img" src="./src/icons/python.png" alt="Python">
-                                    <img class="skills__img" src="./src/icons/java.png" alt="Java">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png&color=000000" alt="Flask">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills__section">
+                                <h3 class="skills__header">Databases</h3>
+                                <div class="skills__grid">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=JRnxU7ZWP4mi&format=png&color=000000" alt="PostgreSQL">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills__section">
+                                <h3 class="skills__header">Dev Tools</h3>
+                                <div class="skills__grid">
+                                    <img class="skills__img" src="https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png&color=000000" alt="Postman">
                                 </div>
                             </div>
                         </li>
@@ -136,16 +153,16 @@
         </section>
     </main>
     <footer>
-        <section id="contact" class="section half-section">
-            <article class="contact">
+        <section id="contact" class="section half-section flex">
+            <article class="flex contact">
                     <h1 class="contact__title">Contact Me</h1>
                     <div class="contact__form">
-                        <form action="" method="POST">
-                            <label for="email">
+                        <form class="flex" action="" method="POST">
+                            <label for="email" class="flex">
                                 Email
                                 <input type="email" name="email" id="email">
                             </label>
-                            <label for="text">
+                            <label for="text" class="flex">
                                 Text
                                 <textarea name="text" id="text" cols="30" rows="10"></textarea>
                             </label>
@@ -153,7 +170,7 @@
                         </form>
                     </div>
             </article>
-            <article class="contact__links">
+            <article  class="flex contact__links">
                 <a href="www.linkedin.com/in/nisamykova">LinkedIn</a>
                 <a href="https://github.com/Nnisik">GitHub</a>
             </article>

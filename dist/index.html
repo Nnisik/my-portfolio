@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header>
@@ -76,6 +76,23 @@
                         </li>
                     </ul>
                 </div>
+                <div class="about--languages">
+                    <h2>Languages</h2>
+                    <ul class="about--languages__list">
+                        <li>
+                            <h3>English</h3>
+                            <p>Advanced</p>
+                        </li>
+                        <li>
+                            <h3>German</h3>
+                            <p>Intermediate</p>
+                        </li>
+                        <li>
+                            <h3>Russian</h3>
+                            <p>Native</p>
+                        </li>
+                    </ul>
+                </div>
             </article>
             <article class="right">
                 <div class="about--skills">
@@ -111,23 +128,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="about--languages">
-                    <h2>Languages</h2>
-                    <ul class="about--languages__list">
-                        <li>
-                            <h3>English</h3>
-                            <p>Upper intermediate</p>
-                        </li>
-                        <li>
-                            <h3>German</h3>
-                            <p>Beginner</p>
-                        </li>
-                        <li>
-                            <h3>Russian</h3>
-                            <p>Native</p>
-                        </li>
-                    </ul>
-                </div>
             </article>
         </section>
         <section id="projects" class="section">
@@ -141,10 +141,14 @@
                     <h1 class="contact__title">Contact Me</h1>
                     <div class="contact__form">
                         <form action="" method="POST">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                            <label for="text">Text</label>
-                            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                            <label for="email">
+                                Email
+                                <input type="email" name="email" id="email">
+                            </label>
+                            <label for="text">
+                                Text
+                                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                            </label>
                             <button type="submit">Send</button>
                         </form>
                     </div>
@@ -155,5 +159,6 @@
             </article>
         </section>
     </footer>
+<script src="main.js"></script>
 </body>
 </html>

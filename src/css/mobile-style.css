@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav h1 {
+        font-size: 2.5rem;
+    }
+    #home .info {
+        width: 100%;
+    }
+    #home .side-container {
+        display: none; /* Hide photo or display it differently on mobile */
+    }
+}

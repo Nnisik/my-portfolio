@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "img": "https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+  },
+  {
+    "id": 2,
+    "name": "Python",
+    "img": "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+  },
+  {
+    "id": 3,
+    "name": "Java",
+    "img": "https://img.icons8.com/?size=100&id=13679&format=png&color=000000"
+  }
+]

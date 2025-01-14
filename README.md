@@ -1,4 +1,4 @@
-# Nina Samykova - Junior Frontend Developer Portfolio
+# Junior Frontend Developer Portfolio
 
 Welcome to my personal portfolio project! This is a simple, interactive, and visually dynamic website built to showcase my skills as a junior frontend developer. It features a responsive layout, light and dark theme support, and smooth animations for an engaging user experience.
 

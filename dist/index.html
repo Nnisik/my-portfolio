@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi</title>
     <link rel="stylesheet" href="../src/css/style.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
     <header>
@@ -21,11 +22,13 @@
                     <li class="flex"><a class="flex link" href="#contact"><img class="img" src="../src/icons/mail.png" alt="Contacts"></a></li>
                 </ul>
                 <button id="theme-switch-btn"><img src="../src/icons/icons8-moon-24.png" alt="theme switch" /></button>
+                <!-- <div id="google_translate_element"></div>-->
             </article>
         </nav>
     </header>
+
     <main>
-        <section id="home" class="section flex">
+        <section id="home" class=" flex section">
             <article class="flex info">
                 <div class="container">
                     <h1 class="header">Hi!<br>I'm Nina!</h1>
@@ -55,7 +58,8 @@
             </aside>
             <button id="cv-button">download CV</button>
         </section>
-        <section id="about" class="flex">
+
+        <section id="about">
             <article class="left flex">
                 <div class="about--education">
                     <h2 class="flex"><img src="../src/icons/graduation-cap.png" alt="icon">Education</h2>
@@ -77,7 +81,7 @@
                     </ul>
                 </div>
                 <div class="about--languages">
-                    <h2>Languages</h2>
+                    <h2><img src="https://img.icons8.com/?size=100&id=25628&format=png&color=000000" alt="icon">Languages</h2>
                     <ul  class="flex about--languages__list">
                         <li>
                             <h3>English</h3>
@@ -100,7 +104,7 @@
                     <ul class="about--skills__list">
                         <li>
                             <div class="skills__section">
-                                <h3>Languages</h3>
+                                <h3 class="skills__header">Languages</h3>
                                 <div class="skills__grid" id="skills-languages"></div>
                             </div>
                         </li>
@@ -132,11 +136,106 @@
                 </div>
             </article>
         </section>
+
         <section id="projects" class="section">
             <h2>My Projects</h2>
             <p>Here are some of my favorite projects...</p>
+            <article class="flex projects-filter">
+                <button class="active-filter project-filter_button" id="projects-filters_all">all</button>
+                <button class="project-filter_button" id="projects-filters_front">front</button>
+                <button class="project-filter_button" id="projects-filters_back">back</button>
+            </article>
+
+            <article id="projects-list">
+                <div class="project">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>AI Task Manager</h3>
+                        <div class="project-info_links">
+                            <a class="project-link github-link">GitHub</a>
+                            <a class="project-link demo-link">-></a>
+                        </div>
+                        <div class="project-info_stack">
+                            <p>Flask</p>
+                            <p>JavaScript</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>AI Task Manager</h3>
+                        <div class="project-info_links">
+                            <a class="project-link github-link">GitHub</a>
+                            <a class="project-link demo-link">-></a>
+                        </div>
+                        <div class="project-info_stack">
+                            <p>Flask</p>
+                            <p>JavaScript</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>AI Task Manager</h3>
+                        <div class="project-info_links">
+                            <a class="project-link github-link">GitHub</a>
+                            <a class="project-link demo-link">-></a>
+                        </div>
+                        <div class="project-info_stack">
+                            <p>Flask</p>
+                            <p>JavaScript</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>AI Task Manager</h3>
+                        <div class="project-info_links">
+                            <a class="project-link github-link">GitHub</a>
+                            <a class="project-link demo-link">-></a>
+                        </div>
+                        <div class="project-info_stack">
+                            <p>Flask</p>
+                            <p>JavaScript</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>AI Task Manager</h3>
+                        <div class="project-info_links">
+                            <a class="project-link github-link">GitHub</a>
+                            <a class="project-link demo-link">-></a>
+                        </div>
+                        <div class="project-info_stack">
+                            <p>Flask</p>
+                            <p>JavaScript</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+
     <footer>
         <section id="contact" class="section half-section flex">
             <article class="flex contact">
@@ -161,6 +260,7 @@
             </article>
         </section>
     </footer>
-<script src="main.js"></script>
+<script src="./main.js"></script>
+<script src="../src/js/translate.js"></script>
 </body>
 </html>

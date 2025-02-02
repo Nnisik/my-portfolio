@@ -18,5 +18,10 @@
     "id": 4,
     "name": "Webpack",
     "img": "https://img.icons8.com/?size=100&id=sOWbK4N3cxGh&format=png&color=000000"
+  },
+  {
+    "id": 5,
+    "name": "React",
+    "img": "https://img.icons8.com/?size=100&id=58811&format=png&color=000000"
   }
 ]

@@ -20,7 +20,7 @@ Here's a simple breakdown of the folder structure of this project:
     │   │   └── translate.js
     │   ├── json/                 # JSON Data files
     │   └── index.js 
-    ├──index.html                 # The main HTML file
+    ├── index.html                # The main HTML file
     ├── .gitignore
     ├── package.json
     ├── package-lock.json
@@ -36,3 +36,4 @@ Here's a simple breakdown of the folder structure of this project:
 
 ### Known issues
 * Project section doesn't fill automatically
+* Projects filters doesn't work 

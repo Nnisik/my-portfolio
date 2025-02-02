@@ -8,7 +8,6 @@ export function fillSkillSection(JSONFilePath, sectionID) {
             return res.json();
         })
         .then((data) => {
-            console.log(data);
             data.forEach((skill) => {
                 document.getElementById(sectionID).appendChild(drawSkillElement(skill["name"], skill["img"]));
             });

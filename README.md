@@ -6,35 +6,21 @@ Welcome to my personal portfolio project! This is a simple, interactive, and vis
 Here's a simple breakdown of the folder structure of this project:
 
     ```graphql
-    portfolio-project/          
-    ├── dist/
-    │   └── index.html            # The main HTML file
-    ├── src/
+    portfolio-project/
+    ├── public/
     │   ├── assets/
-    │   ├── css/
-    │   │   ├── style.css     # Styles for the website (including light/dark themes)
-    │   │   └── mobile-style.css
-    │   ├── icons/            # Icons used for navigation links
-    │   │   ├── code.png
-    │   │   ├── graduation-cap.png
-    │   │   ├── home.png
-    │   │   ├── icons8-moon-24.png
-    │   │   ├── icons8-sun-24.png
-    │   │   ├── mail.png
-    │   │   └── profile.png
+    │   └── icons/                # Icons used for navigation links   
+    ├── src/
+    │   ├── css/                  # Styles for the website (including light/dark themes)
     │   ├── js/            
     │   │   ├── cv-download.js
-    │   │   ├── project-gallery.js
+    │   │   ├── project-section.js
     │   │   ├── skill-section.js
     │   │   ├── theme-toggle.js
     │   │   └── translate.js
-    │   ├── json/            
-    │   │   ├── data-skills-back.json
-    │   │   ├── data-skills-front.json
-    │   │   ├── data-skills-languages.json
-    │   │   ├── data-skills-tools.json
-    │   │   └── data-skils-databases.json
+    │   ├── json/                 # JSON Data files
     │   └── index.js 
+    ├──index.html                 # The main HTML file
     ├── .gitignore
     ├── package.json
     ├── package-lock.json
@@ -43,11 +29,10 @@ Here's a simple breakdown of the folder structure of this project:
 
 ### Future Improvements
 * Fill projects section
-  * Data 
   * Auto drawing
   * Filters
 * Implement a simple contact form to allow sending a message.
 * Resume download
 
 ### Known issues
-Curently, doesn't contain errors
+* Project section doesn't fill automatically

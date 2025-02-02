@@ -1,8 +1,141 @@
 [
   {
     "id": 1,
-    "name": "",
-    "type": "",
-    "image": ""
+    "name": "AI Task Manager",
+    "type": 0,
+    "image": "",
+    "stack": [
+      "Flask",
+      "JavaScript",
+      "HTML/CSS",
+      "PostgreSQL"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 2,
+    "name": "Video player web application",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "JavaScript",
+      "SaSS",
+      "HTML"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Photo album",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "JavaScript",
+      "SaSS",
+      "HTML"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 4,
+    "name": "Auction page",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 5,
+    "name": "Progress bar",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 6,
+    "name": "Theme switcher",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "JavaScript",
+      "SaSS",
+      "HTML"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 7,
+    "name": "Currency converter",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "Svetle"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Neon clock",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 9,
+    "name": "Coffee store",
+    "type": 1,
+    "image": "",
+    "stack": [
+      "React",
+      "SaSS"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
+  },
+  {
+    "id": 10,
+    "name": "Weather application",
+    "type": 3,
+    "image": "",
+    "stack": [
+      "React Native"
+    ],
+    "links": {
+      "Github": "",
+      "Demo": ""
+    }
   }
 ]

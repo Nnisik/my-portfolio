@@ -113,7 +113,6 @@ header {
 }
 
 .section {
-    min-height: 90vh;
     width: 100%;
     padding: var(--big-gap);
 }
@@ -413,6 +412,7 @@ main {
 
 #projects {
     width: 100%;
+    height: fit-content;
     margin: var(--big-gap);
     padding: 0;
 
@@ -459,7 +459,7 @@ main {
 #projects-list {
     width: calc(100% - 2 * var(--big-gap));
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: var(--small-gap);
 }
 
@@ -487,11 +487,26 @@ main {
     display: flex;
     gap: var(--small-gap);
     margin: calc(var(--small-gap) / 2) 0;
+
+    & a {
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+
+    & .github-link:hover {
+        color: rebeccapurple;
+    }
+
+    & .demo-link:hover {
+        color: greenyellow;
+    }
 }
 
 .project-info_stack {
     display: flex;
-    gap: 12px;
+    justify-content: space-evenly;
+    width: fit-content;
+    gap: 16px;
 }
 
 #contact {

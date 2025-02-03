@@ -9,7 +9,7 @@ export function fillSProjectsSection(JSONFilePath) {
         .then((data) => {
             console.log(data)
             data.forEach((skill) => {
-                projectsSection.appendChild(displayProjectInfo(skill));
+                // projectsSection.appendChild(displayProjectInfo(skill));
             });
         })
         .catch((error) => {

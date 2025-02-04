@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "AI Task Manager",
-    "type": 0,
+    "type": 2,
     "image": "",
     "stack": [
       "Flask",
@@ -11,14 +11,14 @@
       "PostgreSQL"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/AI-task-manager",
       "Demo": ""
     }
   },
   {
     "id": 2,
     "name": "Video player web application",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "JavaScript",
@@ -26,14 +26,14 @@
       "HTML"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/video-player-app",
       "Demo": ""
     }
   },
   {
     "id": 3,
     "name": "Photo album",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "JavaScript",
@@ -41,42 +41,42 @@
       "HTML"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/photo-album",
       "Demo": ""
     }
   },
   {
     "id": 4,
     "name": "Auction page",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "JavaScript",
       "HTML/CSS"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/you-need-it-auction",
       "Demo": ""
     }
   },
   {
     "id": 5,
     "name": "Progress bar",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "JavaScript",
       "HTML/CSS"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/progress-bar",
       "Demo": ""
     }
   },
   {
     "id": 6,
     "name": "Theme switcher",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "JavaScript",
@@ -84,44 +84,48 @@
       "HTML"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/theme-switcher",
       "Demo": ""
     }
   },
   {
     "id": 7,
     "name": "Currency converter",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "Svetle"
-    ]
+    ],
+    "links": {
+      "Github": "https://github.com/Nnisik/currency-converter",
+      "Demo": ""
+    }
   },
   {
     "id": 8,
     "name": "Neon clock",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "JavaScript",
       "HTML/CSS"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/neon-clock",
       "Demo": ""
     }
   },
   {
     "id": 9,
     "name": "Coffee store",
-    "type": 1,
+    "type": 0,
     "image": "",
     "stack": [
       "React",
       "SaSS"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/Coffee-App",
       "Demo": ""
     }
   },
@@ -134,7 +138,7 @@
       "React Native"
     ],
     "links": {
-      "Github": "",
+      "Github": "https://github.com/Nnisik/Weather-App",
       "Demo": ""
     }
   }

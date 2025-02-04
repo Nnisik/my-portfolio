@@ -3,13 +3,7 @@ import {fillSProjectsSection} from "./js/projects-section";
 
 function filterProjects(type) {
     document.querySelectorAll(".project").forEach((project) => {
-        let elementStyle;
-        if (project.hasAttribute(type)) {
-            elementStyle = "block";
-        } else {
-            elementStyle = "none";
-        }
-        project.style.display = elementStyle;
+        project.style.display = project.getAttribute("data-type") === type ? "block": "none";
     });
 }
 
@@ -20,6 +14,12 @@ function setNewActive(id) {
     document.getElementById(`projects-filters_${id}`).classList.toggle("active-filter");
 }
 
+const projectTypes = {
+    0: "full",
+    1: "front",
+    2: "back"
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     fillSkillSection("../src/json/data-skills-back.json", "skills-back");
     fillSkillSection("../src/json/data-skills-front.json", "skills-front");
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fillSkillSection("../src/json/data-skils-databases.json", "skills-databases");
 
     fillSProjectsSection("../src/json/data-projects.json");
+
     document.getElementById("projects-filters_all").addEventListener("click", () => {
         setNewActive("all");
         document.querySelectorAll(".project").forEach((project) => {
@@ -37,11 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("projects-filters_front").addEventListener("click", () => {
         setNewActive("front");
-        filterProjects("front");
+        filterProjects("0");
     });
 
     document.getElementById("projects-filters_back").addEventListener("click", () => {
         setNewActive("back");
-        filterProjects("back");
+        filterProjects("1");
+    });
+
+    document.getElementById("projects-filters_full").addEventListener("click", () => {
+        setNewActive("full");
+        filterProjects("2");
     });
 });
